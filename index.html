@@ -393,6 +393,26 @@
         designer, roteiristas, testadores, artistas de som, produtores,
         designers, especialistas em marketing, tradutores e localizadores.
       </p>
+      <h3 class="pixel text-center fs-1 border" style="background: #04d9b241">
+        Space Shooter
+      </h3>
+      <div class="text-center text-black">
+        <input
+          class="btn m-2 w-50 text-white"
+          type="button"
+          value="Jogar"
+          id="btn-game"
+          onclick="alterarDisplay()"
+        />
+      </div>
+      <iframe
+        class="ratio"
+        src="https://yiuriy.github.io/space-shooter/"
+        frameborder="0"
+        title="Shooter Espacial"
+        allowfullscreen
+        id="telaGame"
+      ></iframe>
     </div>
     <footer class="text-center p-3 text-white">
       Site criado por
@@ -411,4 +431,12 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"
   ></script>
+  <script>
+    let gameIframe = window.document.getElementById("telaGame");
+    let btnGame = window.document.getElementById("btn-game");
+    function alterarDisplay() {
+      gameIframe.style.display = "block";
+      btnGame.style.display = "none";
+    }
+  </script>
 </html>

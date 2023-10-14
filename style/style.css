@@ -65,6 +65,16 @@ p {
   border-radius: 10px;
 }
 
+#btn-game{
+  background-color: var(--cor2);
+}
+
+iframe{
+  width: 300px;
+  height: 600px;
+  display: none;
+}
+
 footer {
   background-color: var(--cor1);
 }
